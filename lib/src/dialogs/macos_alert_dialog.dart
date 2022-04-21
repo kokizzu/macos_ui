@@ -226,13 +226,12 @@ class MacosAlertDialog extends StatelessWidget {
                   ),
                 ],
               ],
-              if (suppress != null) ...[
-                const SizedBox(height: 16),
+              const SizedBox(height: 16),
+              if (suppress != null)
                 DefaultTextStyle(
                   style: MacosTheme.of(context).typography.headline,
                   child: suppress!,
                 ),
-              ],
               const SizedBox(height: 16),
             ],
           ),
